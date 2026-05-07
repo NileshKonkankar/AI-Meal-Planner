@@ -8,20 +8,20 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: '#DC2626',
-          secondary: '#F87171',
-          cta: '#CA8A04',
-          dark: '#450A0A',
+          primary: '#10b981', // Emerald 500
+          secondary: '#2dd4bf', // Teal 400
+          cta: '#f97316', // Orange 500
+          dark: '#064e3b', // Emerald 900
         },
-        warm: '#FEF2F2'
+        warm: '#f8fafc' // Slate 50
       },
       fontFamily: {
-        sans: ['Raleway', 'sans-serif'],
-        serif: ['Lora', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Outfit', 'sans-serif'],
       },
       boxShadow: {
-        'block': '6px 6px 0px 0px rgba(69, 10, 10, 1)',
-        'block-hover': '2px 2px 0px 0px rgba(69, 10, 10, 1)',
+        'soft': '0 4px 20px -2px rgba(16, 185, 129, 0.1)',
+        'glass': '0 8px 32px 0 rgba(16, 185, 129, 0.15)',
       }
     },
   },

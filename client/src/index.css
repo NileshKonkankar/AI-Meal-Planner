@@ -7,3 +7,12 @@
     @apply min-h-screen bg-warm text-brand-dark;
   }
 }
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-soft rounded-3xl;
+  }
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-sm border border-white/50 shadow-sm rounded-2xl;
+  }
+}
