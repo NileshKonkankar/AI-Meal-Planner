@@ -3,6 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import helmet from 'helmet';
+import compression from 'compression';
+import hpp from 'hpp';
 import rateLimit from 'express-rate-limit';
 import mongoSanitize from 'express-mongo-sanitize';
 import mealRoutes from './routes/mealRoutes.js';
@@ -14,6 +16,10 @@ const PORT = process.env.PORT || 5000;
 
 // Security Middleware
 app.use(helmet());
+app.use(hpp()); // Protect against HTTP Parameter Pollution attacks
+
+// Performance Middleware
+app.use(compression()); // Compress all responses
 
 // CORS Configuration - Restrict to frontend origin
 app.use(cors({
